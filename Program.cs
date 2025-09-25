@@ -106,4 +106,46 @@
 //}
 
 // сам задания
-// задание 1
+// задание 1 
+/*Console.WriteLine("Добро пожаловать в консольный калькулятор, если хотите выйти из калькулятора просто введите exit");
+while (true) {
+    try
+    {
+        Console.Write("Введите первое число: ");
+        string? input = Console.ReadLine();
+        if (!double.TryParse(input, out double a)) {
+            if (input == "exit") { outMessage(); break; }
+            else { throw new FormatException("Ошибка: введено не число");}
+        }
+        Console.Write("Введите операцию (-,+,/,*,^): ");
+        string? operation = Console.ReadLine();
+        if (operation == "exit") { outMessage(); break; }
+        Console.Write("Введите второе число: ");
+        input = Console.ReadLine();
+        if (!double.TryParse(input, out double b))
+        {
+            if (input == "exit") { outMessage(); break; }
+            else { throw new FormatException("Ошибка: введено не число"); }
+        }
+        double result = 0.0;
+        switch (operation)
+        {
+            case "+": result = Add(a, b); break;
+            case "-": result = NotAdd(a, b); break;
+            case "*": result = Mult(a, b); break;
+            case "/": result = Div(a, b); break;
+            case "^": result = Pow(a, b); break;
+        }
+        Console.WriteLine($"Результат выполнения операции: {result}");
+    } catch (FormatException ex) { Console.WriteLine(ex.Message); }
+    catch (Exception ex) { Console.WriteLine(ex.Message); }
+}
+static double Add(double a, double b) {  return a + b; }
+static double NotAdd(double a, double b) {  return a - b; }
+static double Mult(double a, double b) { return a * b; }
+static double Div(double a, double b) { return a / b; }
+static double Pow(double a, double b) { return Math.Pow(a,b); }
+void outMessage() { Console.WriteLine("Выполнен выход из калькулятора, до встречи! "); }
+*/
+
+// задание 2 
